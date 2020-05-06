@@ -1,0 +1,5 @@
+note right of browser: Input value is pushed into notes array, redraw function is called
+
+browser->server: Post request https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+server->browser: {"message":"note created"}

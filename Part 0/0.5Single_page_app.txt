@@ -1,0 +1,19 @@
+browser->server: GET request https://fullstack-exampleapp.herokuapp.com/spa
+
+server->browser: html in response of get request
+
+browser->server: http get Request for main.css
+
+server->browser: main.css
+
+browser->server: http get spa.js
+
+server->browser: spa.js
+
+note right of browser: starts executing spa.js
+
+browser->server: get request https://fullstack-exampleapp.herokuapp.com/data.json
+
+server->browser: [{content: inputvalue, date: new Date()}]
+
+note right of browser: browser executes the callback function to display notes

@@ -1,0 +1,25 @@
+browser->server: post call to /new_note with the input value
+
+note right of browser: note: input value
+
+
+
+browser->server: Get request /notes
+
+server->browser: html in response of get request
+
+browser->server: http get Request for main.css
+
+server->browser: main.css
+
+browser->server: http get main.js
+
+server->browser: main.js
+
+note right of browser: starts executing main.js
+
+browser->server: get request https://fullstack-exampleapp.herokuapp.com/data.json
+
+server->browser: [{content: inputvalue, date: new Date()}]
+
+note right of browser: browser executes the callback function to display notes
